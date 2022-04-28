@@ -25,4 +25,9 @@ async def dispatcher(request: Request):
     print(await request.body())
     print(await request.json())
 
+@app.post("/dispatcher")
+async def dispatcher(request: Request):
+    print(await request.body())
+    print(await request.json())
+
 
